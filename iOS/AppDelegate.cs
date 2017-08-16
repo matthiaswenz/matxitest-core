@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using UIKit;
+using MyLibrary;
 
 namespace MatXiTestCore.iOS
 {
@@ -20,6 +21,7 @@ namespace MatXiTestCore.iOS
         {
             App.Initialize();
 
+            Class1 clazz = new Class1();
 
 
             return true;
