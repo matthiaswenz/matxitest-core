@@ -8,6 +8,8 @@ using Android.Support.V4.App;
 using Android.Support.V4.View;
 using Android.Support.Design.Widget;
 
+using MyLibrary;
+
 namespace MatXiTestCore.Droid
 {
     [Activity(Label = "@string/app_name", Icon = "@mipmap/icon",
@@ -24,6 +26,8 @@ namespace MatXiTestCore.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            Class1 clazz = new Class1();
 
             adapter = new TabsAdapter(this, SupportFragmentManager);
             pager = FindViewById<ViewPager>(Resource.Id.viewpager);
